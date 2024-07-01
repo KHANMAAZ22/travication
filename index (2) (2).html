@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travication</title>
+  
+    <link rel="icon" href="fevicon (3).jpg" type="image/jpg">
+
+    <!-- <link rel="form" href="styles.css" --> 
+    <link rel="stylesheet" href="styles (3) (2).css">
+
+    <script src="script (3) (2).js"></script>
+
+</head>
+ 
+ 
+
+<body>
+ 
+    <!--===========Nav Bar=================-->
+
+    
+    <section class="nav-bar">
+        <div class="logo">TRAVICATION</div>
+        <nav>
+            <ul>
+                <li><a href="index (2) (2).html">Home</a></li>
+                <li><a href="package (1).html">Packages</a></li>
+                <li><a href="blog (1).html">Blog</a></li>
+                <li><a href="about (1).html">About</a></li>
+                <li><a href="http://localhost/sign%20up/" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> 
+
+    <!--==================Marquee===================--> 
+
+
+    <hr>
+    <br>
+    <br>
+    <marquee direction = "right" style = "background-color: lightgoldenrodyellow" > "Travel website " </marquee>
+    <br>
+    <br>
+    <hr>
+
+
+    <!--===============Banner================-->
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="banner">
+        <div class="banner-text-item">
+            <div class="banner-heading">
+                <h1>Find your Next tour!</h1>
+            </div>
+            <form class="form">
+                <input type="text" list="mylist" placeholder="Where would you like to go?">
+                <datalist id="mylist">
+                    <option>Skardu</option>
+                    <option>Murree</option>
+                    <option>Naran, Kaghan</option>
+                    <option>Hunza</option>
+                    <option>Babusar Top</option>
+                    <option>Nanga Parbat</option>
+                    <option>Swat, Kalam</option>
+                    <option>Chillas</option>
+                    <option>Kashmir</option>
+                    <option>Gilgit Baltistan</option>
+                </datalist>
+                <input type="date" class="date">
+                <a href="#" class="book" onclick="showPopup(event)">Book</a>
+            </form>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>Thank you for booking with Travication!</p>
+        <button onclick="redirectToBookingPage()">Proceed to Booking Details</button>
+    </div>
+
+    <script>
+        function showPopup(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function redirectToBookingPage() {
+            window.location.href = "book.html";
+        }
+    </script>               
+
+
+
+    <!--=========Services===============-->
+ 
+
+    <section class="services">
+        <div class="service-item">
+            <img src="tour-guide (1).jpg">
+            <br>
+            <h2>4000+ Our Local Guides</h2>
+            <br>
+        </div>
+        <div class="service-item">
+            <img src="trusted agency (1).jpeg">
+            <br>
+            <h2>100% Trusted Tour  Agency</h2>
+            <br>
+        </div>
+        <div class="service-item">
+            <img src="travel experience (1).jpeg">    
+            <br>
+            <h2>1+ Year of Travel Experience</h2>
+        </div>
+        <div class="service-item">
+            <img src="happy travelers (1).jpeg">
+            <br>
+            <h2>98% Our Travelers are Happy</h2>
+        </div>
+    </section>
+
+
+    <!--==============Places===================-->
+
+
+    <section class="places">
+        <div class="places-text">
+            <small>FEATURED TOURS PACKAGES</small>
+            <h2>Favourite Places</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="skardu (2).jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>AUTUMN TOUR TO SHANGRILA, DEOSAI PLAINS & KHAPLU</h2>
+                    <p class="cost">Rs24,500 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 8 Days(7 nights)</p>
+                        <p class="location">Skardu</p>
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="murree (2).jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>TRIP TO MURREE, PATRIATA, NATHIYA GALLI & GALYAT</h2>
+                    <br>
+                    <p class="cost">Rs10,200 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days(2 nights)</p>
+                        <p class="location">Murree</p>
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="swat kalam (2).jpeg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>TRIP TO KUMRAT VALLEY, MAHODAND LAKE & MALAM JABBA</h2>
+                    <p class="cost">Rs20,500 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 4 Days(3 nights)</p>
+                        <p class="location">Swat, Kalam</p>
+                    </div>
+                </div>
+
+            
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="naran kaghan (2).jpeg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>TRIP TO LULUSAR LAKE & JHEEL SAIFULMALUK </h2>
+                    <br>
+                    <p class="cost">Rs30,200 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 4 Days(3 nights)</p>
+                        <p class="location">Naran, Kaghan</p>
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="hunza (2).jpeg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>TRIP TO HUNZA VALLEY & KHUNJRAB PASS</h2>
+                    <br>
+                    <p class="cost">Rs18,500 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 5 Days(4 nights)</p>
+                        <p class="location">Hunza</p>
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="nanga parbat (2).jpeg">
+                    </div>
+                </div>
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>TRIP TO FAIRY MEADOWS AND NANGA PARBAT BASE CAMP</h2>
+                    <p class="cost">Rs24,600 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 5 Days(4 nights)</p>
+                        <p class="location">Nanga Parbat</p>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="babusar (2).jpeg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>TRIP TO BABUSAR TOP & OTHER ADVENTURING PLACES</h2>
+                    <p class="cost">Rs15,600 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 5 Days(4 nights)</p>
+                        <br>
+                        <p class="location">Chillas</p>
+                    </div>
+                </div>
+            </div>
+   
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="kashmir (1).jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>TRIP TO UPPER NEELUM VALEY, KASHMIR</h2>
+                    <br>
+                    <p class="cost">Rs80,600 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 10 Days(9 nights)</p>
+                        <p class="location">Kashmir</p>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="gilgit-baltistan (1).jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>TRIP TO DEOSAI NATIONAL PARK, ATTABAD LAKE</h2>
+                    <br>
+                    <p class="cost">Rs25,600 / Per Person(as low as)</p>
+                    <div class="card-box">
+                        <p class="time">🕓 8 Days(7 nights)</p>
+                        <p class="location">Gilgit Baltistan</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+     <!--===========About Us===============-->
+
+     <br>
+     <br>     
+     <br>
+     <br>
+
+<section class="about">
+    <div class="about-container">
+        <div class="about-img">
+            <img src="footer (1).jpeg" alt="About Us Image">
+        </div>
+        <div class="about-text">
+            <small>ABOUT OUR COMPANY</small>
+            <br>     
+             <h3>We are Travication Support Company</h3>
+            <p>
+                Travication Support Company is dedicated to creating unforgettable travel experiences. 
+                With a team of experienced professionals and a passion for exploration, we offer comprehensive travel 
+                solutions that include personalized itineraries, seamless bookings, and round-the-clock support. 
+                Whether you're seeking adventure, relaxation, or cultural immersion, we tailor our services to meet your 
+                every need, ensuring a hassle-free and enjoyable journey from start to finish.
+            </p>
+            <br>
+            <br>
+
+            <h3>Our Mission</h3>
+            <p>
+                At Travication, our mission is to provide exceptional travel experiences that inspire and rejuvenate. 
+                We are committed to delivering top-notch services, comfortable accommodations, and exciting activities 
+                that cater to the unique needs and preferences of our travelers.
+            </p>
+            <div class="checkbox-list">
+                <label><input type="checkbox" checked>Exceptional Customer Service</label>
+                <label><input type="checkbox" checked>Personalized Travel Plans</label>
+                <label><input type="checkbox" checked>Sustainable Tourism Practices</label>
+                <label><input type="checkbox" checked>Unforgettable Experiences</label>
+            </div>
+            <a class="about-link" href="about (1).html">Learn More About Us</a>
+        </div>
+    </div>
+</section>
+
+
+    <!--===========Footer=================-->
+
+
+    <br>
+    <br>     
+    <br>
+    <br>
+
+    <div class="footer">
+        <div class="links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="offer discount.html">Offers & Discounts</a></li>
+                <li><a href="coupon.html">Get Coupon</a></li>
+                <li><a href="contact (1).html">Contact</a></li>
+                <li><a href="about (1).html">About</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>New Products</h3>
+            <ul>
+                <li><a href="#">Women's Clothing</a></li>
+                <li><a href="#">Fashion Accessories</a></li>
+                <li><a href="#">Men's Accessories</a></li>
+                <li><a href="#">Rubber-made Toys</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">Report a Payment Issue</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+</body>
